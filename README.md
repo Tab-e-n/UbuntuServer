@@ -83,7 +83,7 @@ __Kontributoři:__
 
 ### Struktura serveru a jeho funkčnosti: 
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek1.png)
 
 ## Postup práce na serveru: 
 
@@ -113,7 +113,7 @@ __Proč:__
 
 ### 2. Nainstalování Apache2 
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek2.png)
 
 __Proč:__ 
 
@@ -211,7 +211,7 @@ You can access the default Apache landing page to confirm that the software is r
 
 You will see the default Ubuntu 22.04 Apache web page as in the following: 
 
-_Apache default page obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek3.png)
 
 This page indicates that Apache is working correctly. It also includes some basic information about important Apache files and directory locations. 
 
@@ -389,9 +389,9 @@ Nakonec je důležité, aby obsah měl správnou struktury a byl co (popřípad�
 
 __Výsledek:__
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek5.png)
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek6.png)
 
 ### 4. Využití “Certbot” k získání HTTPS certifikátu 
 
@@ -476,10 +476,7 @@ To confirm that your site is set up properly, visit https://yourwebsite.com/ in 
 
 __Získání certifikátu __
 
-_obrazek zde_
-
- 
- 
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek7.png)
 
 ### 5. Konfigurace DNS a vytváření subdomén 
 
@@ -586,7 +583,7 @@ sudo service apache2 restart
 
 With these configurations in place, users will be able to create subdomains on the ssibrno.cz domain, and each subdomain will have its own directory in the /var/www/html/ path. Make sure to replace YOUR_SERVER_IP with the actual IP address of your server in the DNS configuration. 
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek8.png)
 
 ### 6. Vytvoření přístupu pro zákazníka 
 
@@ -621,7 +618,7 @@ As we mentioned earlier, SFTP works over SSH. So first, it is required to instal
 $ sudo apt install ssh 
 ```
 
-_obrazek zde_  
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek9.png)
 
 __Step 2: Change SSHD configuration for SFTP group__
 
@@ -630,7 +627,9 @@ After installing the SSH, you need to change the ‘/etc/ssh/sshd_config’ SSHD
 ```
 $ sudo vim /etc/ssh/sshd_config 
 ```
- 
+
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek10.png) 
+
 Now, paste the following lines at the end or bottom of the file: 
 
 ```
@@ -641,7 +640,7 @@ AllowTcpForwarding no
 ForceCommand internal-sftp
 ``` 
 
-_obrazek zde_ 
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek11.png)
 
 The above configuration will allow the sftp users group to access their home directories through the SFTP. However, not allowed to access the normal SSH shell. Save the above-mentioned lines in the configuration file and close it. 
 
@@ -653,7 +652,7 @@ For making the new changes to take effect, restart the SSH service using the ‘
 $ sudo systemctl restart ssh 
 ```
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek12.png)
 
 Now, the SSH configuration for SFTP users has been set up on your system. Next, you will create a new SFTP user account and assign permissions. 
 
@@ -665,7 +664,7 @@ To grant SFTP access to users, you will create SFTP user accounts. First, create
 $ sudo addgroup sftp 
 ```
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek13.png)
 
 __Step 5: Create a new SFTP user__
 
@@ -681,7 +680,7 @@ Here, we have created a new sftp user named ‘samreena’ as follows:
 $ sudo useradd -m samreena -g sftp 
 ```
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek14.png)
 
 Set the password for the newly created sftp user by typing the following command: 
 
@@ -690,7 +689,7 @@ $ sudo passwd sftp_user
 $ sudo passwd samreena 
 ```
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek15.png)
 
 __Step 6: Grant permissions to the specific directory__
 
@@ -706,7 +705,7 @@ The above command will change according to the name of the sftp_user.
 $ sudo chmod 700 /home/samreena/ 
 ```
  
-_obrazek zde_ 
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek16.png)
 
 Here, the SFTP server configurations are completed. Now, you can log in with the sftp credentials to check either everything is working properly or not. 
 
@@ -729,7 +728,7 @@ $ sftp sftp_user@127.0.0.1
 $ sftp samreena@127.0.0.1 
 ```
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek17.png)
 
 When you connect for the first time via the SFTP, the following dialog appears on the terminal screen. Type ‘yes’ to continue the connecting process. Now, set the password for the sftp user. After that, the following connected to 127.0.0.1 messages shows on the terminal window, and now you logged in on the sftp. 
 
@@ -741,7 +740,7 @@ sftp> mkdir test-sftp
 sftp> ls
 ```
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek18.png)
 
 __Method 2: Connect to the SFTP using the GUI__
 
@@ -751,15 +750,15 @@ Open the Nautilus file manager using the application menu and then click on the 
 
 Enter the SFTP account credentials which you have been set up above and click on the connect as follows: 
 
-_obrazek zde_
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek19.png)
 
 On a successful connection, the following interface will show: 
 
-_obrazek zde_ 
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek20.png)
 
 Once you connected via the SFTP server, you can access your home directory and its directory contents as follows: 
 
-_obrazek zde_ 
+![Struktura](https://github.com/Tab-e-n/UbuntuServer/blob/main/Obrazky/Obr%C3%A1zek21.png)
 
 __Conclusion__
 
