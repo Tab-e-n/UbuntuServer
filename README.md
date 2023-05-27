@@ -76,13 +76,9 @@ __Zakladatel:__ ~~Jára Cimrman~~
 __Kontributoři:__  
 
  - ~~Jára Cimrman~~
-
  - Černý Vít
-
  - Žalud Adam 
-
  - ChatGPT 
-
  - Boháček Ondřej
 
 ### Struktura serveru a jeho funkčnosti: 
@@ -108,7 +104,7 @@ __Proč:__
  - Napíše všechny kódy za vás 
  - Konfigurace – nemusíte vůbec pracovat 
 
-====> [ZKUSTE NYNÍ!!!](https://chat.openai.com/) <====== 
+======> [ZKUSTE NYNÍ!!!](https://chat.openai.com/) <====== 
 
  
  
@@ -602,7 +598,7 @@ Naše řešení tohoto kroku bylo provedeno podle https://linuxhint.com/setup-sf
 
 2 years ago 
 
-by __Samreena Aslam__
+by__ Samreena Aslam__
 
  
 Data security and credentials encryption are the thumb rules for a system administrator. FTP (File Transfer Protocol) is great for transferring files, but it is not as secure to use over the network. By using this protocol, your data and credentials are transferred without any encryption method. SFTP, abbreviated as Secure File Transfer Protocol, is used for providing better security. SFTP works over the SSH protocol by providing the encryption required to establish a secure connection. Therefore, you can transfer data to or from your local computer system in a secure way. Hence, the secure file transfer protocol (SFTP) is more secure than the simple file transfer protocol (FTP). Sometimes, you may need to provide remote access to the SFTP/FTP server to the development teams or other clients. In this case, SFTP allows you to provide secure limited access to specific directories and files. 
