@@ -814,4 +814,12 @@ Finální dílo Járy Cimrmana a jeho ovlivnění Vítkova chatbota, aby rozbil 
 
 `sudo ufw allow "port”` - otevře daný port (např.: HTTPS je port 443) 
 
+`sudo nano /etc/ssh/sshd_config` - úprava SSH configu
  
+`cd /var/www/html` - přístup do složky s webovou stránkou
+ 
+`sudo wget "soubor"` - stahování souborů z internetu
+ 
+`cd /etc/apache2/sites-enabled/` - složka se configy domén
+ 
+`sudo a2ensite penize-zdarma2.conf` - povolení fungování domény/subdomény
