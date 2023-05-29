@@ -372,7 +372,7 @@ Apache will now be serving your domain name. You can test this by navigating to 
 __Co vše je zapotřebí nakonfigurovat?__
  - Obecná konfigurace serveru – již podrobně popsáno v předchozím kroku 
  - Správa souborů – je nutné určit adresář souborů, který bude sloužit jako kořenový adresář pro webové stránky a měl tedy obsahovat všechen webový obsah (např.: HTML soubory, obrázky atd.) pro jeho vzhled a účel – popsáno v dalším kroku 
- - Nastavení SSL/TLS – těmito certifikáty lze zajistit šifrovanou komunikaci mezi serverem a klientem pro zvýšení bezpečnosti – postup získání certifikátu v kroku 5 
+ - Nastavení SSL/TLS – těmito certifikáty lze zajistit šifrovanou komunikaci mezi serverem a klientem pro zvýšení bezpečnosti – postup získání certifikátu v kroku 4 
  - Nachystat přidání dalších subdomén pro zákazníky 
 
 ### 3. Vložení souborů ve formátu html a PHP na webovou stránku 
@@ -798,7 +798,9 @@ To create an SSH public key for a specific user to connect to an SFTP server, yo
  
 ### 7. ROZBITÍ SERVERU 
 
-Finální dílo Járy Cimrmana a jeho ovlivnění Vítkova chatbota, aby rozbil náš server. 
+Finální dílo Járy Cimrmana a jeho ovlivnění Vítkova chatbota, aby rozbil náš server.
+ 
+Oops... :(
 
 ### Další důležité příkazy: 
 
@@ -820,6 +822,6 @@ Finální dílo Járy Cimrmana a jeho ovlivnění Vítkova chatbota, aby rozbil 
  
 `sudo wget "soubor"` - stahování souborů z internetu
  
-`cd /etc/apache2/sites-enabled/` - složka se configy domén
+`cd /etc/apache2/sites-enabled/` - složka s configy domén
  
 `sudo a2ensite penize-zdarma2.conf` - povolení fungování domény/subdomény
